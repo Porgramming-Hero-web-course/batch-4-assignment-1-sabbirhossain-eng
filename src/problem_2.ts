@@ -1,8 +1,10 @@
 // Create a TypeScript function removeDuplicates that accepts an array of numbers and returns a new array with duplicates removed. Preserve the original order of elements.
 
-const removeDuplicate =(numbers:number[]) :number[] => {
+type allNumbers = number;
+
+const removeDuplicate =(allNumbers:number[]) :number[] => {
     
-    const filterNumbers = numbers.filter((value:number, index) => numbers.indexOf(value) === index);
+    const filterNumbers = allNumbers.filter((value:number, index) => allNumbers.indexOf(value) === index);
 
     return filterNumbers;
     
