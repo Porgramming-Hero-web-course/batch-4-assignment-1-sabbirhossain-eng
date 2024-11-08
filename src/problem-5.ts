@@ -14,4 +14,4 @@ function getProperty<T extends {"name" : string}, K extends keyof T>(Obj: T, key
 // Sample Input:
 const person = { name: "Alice", age: 30 };
 
-console.log(getProperty(person, "name"));
+// console.log(getProperty(person, "name"));
