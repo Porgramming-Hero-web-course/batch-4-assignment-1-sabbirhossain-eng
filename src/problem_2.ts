@@ -10,4 +10,4 @@ const removeDuplicate =(allNumbers:number[]) :number[] => {
     
 }
 
-console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5]));
+// console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5]));

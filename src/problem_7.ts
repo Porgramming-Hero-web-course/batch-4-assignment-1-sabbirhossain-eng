@@ -21,5 +21,5 @@ class Car{
 const car = new Car("Honda", "Civic", 2018);
 const currentAge = car.getCarAge();
 
-console.log(currentAge);
+// console.log(currentAge);
 

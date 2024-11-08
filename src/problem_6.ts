@@ -7,8 +7,16 @@ interface profile {
  }
 
  function updateProfile<T extends object>(profile: T, updates:Partial<T>): T {
-    return {...profile, ...updates};
+   const updatedProfile = { ...profile };
 
+   for (const key in updates) {
+     
+     if (updates[key] !== undefined) {
+       updatedProfile[key as keyof T] = updates[key] as T[keyof T];
+     }
+   }
+ 
+   return updatedProfile;
  };
 
  // Sample Input :

@@ -5,7 +5,7 @@ type person ={
     age: number;
 }
 
-function getProperty<T, K extends keyof T>(Obj: T, key: K): T[K] {
+function getProperty<T extends {"name" : string}, K extends keyof T>(Obj: T, key: K): T[K] {
 
     return Obj[key];
     

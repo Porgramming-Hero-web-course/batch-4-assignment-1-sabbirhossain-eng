@@ -13,12 +13,17 @@ interface Rectangle {
 type name= Circle | Rectangle;
 
 function calculateShapeArea(shape: name) : number {
-    if (shape.shape === "circle" ) {
+    if ("radius" in shape ) {
         return  Math.PI* shape.radius * shape.radius;
         
-    } else {
+    } else if ("width" in shape) {
         return shape.width * shape.height;
+    } 
+    
+    else {
+        return 0;
     }
+
     
 }
 
@@ -34,5 +39,5 @@ const rectangleArea = calculateShapeArea({
     height: 6,
   });
 
-  console.log(rectangleArea);
+//   console.log(rectangleArea);
   

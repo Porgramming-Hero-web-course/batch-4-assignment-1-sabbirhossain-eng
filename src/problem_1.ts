@@ -1,4 +1,5 @@
 // Write a TypeScript function sumArray that takes an array of numbers and returns the sum of all elements in the array.
+
 type numbers = number;
 
 function sumArray(numbers: number[]):number {
@@ -12,4 +13,4 @@ function sumArray(numbers: number[]):number {
     
 }
 
-console.log(sumArray([1,2,3,4,5]));
+// console.log(sumArray([1,2,3,4,5]));
